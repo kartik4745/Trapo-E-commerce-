@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapo | Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <p>Review your items before checkout</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
+
+    <section class="cart-section">
+        <h2>Items in Your Cart</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="item"></td>
+                    <td>Smartphone</td>
+                    <td>₹25,000</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>₹25,000</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="item"></td>
+                    <td>Wireless Earbuds</td>
+                    <td>₹1,499</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>₹1,499</td>
+                </tr>
+
+                <tr>
+                    <td><img src="https://via.placeholder.com/80" alt="item"></td>
+                    <td>Running Shoes</td>
+                    <td>₹2,199</td>
+                    <td>
+                        <input type="number" value="1" min="1">
+                    </td>
+                    <td>₹2,199</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-total">
+            <h3>Cart Summary</h3>
+            <p><strong>Subtotal:</strong> ₹28,698</p>
+            <p><strong>Shipping:</strong> Free</p>
+            <p><strong>Total:</strong> <span class="grand">₹28,698</span></p>
+
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Trapo | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+nav {
+    background: #333;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+.cart-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.cart-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background: #f7f7f7;
+}
+
+
+td img {
+    width: 80px;
+    border-radius: 5px;
+}
+
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
+
+
+.cart-total {
+    margin-top: 30px;
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart-total:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.cart-total p {
+    margin: 8px 0;
+}
+
+.grand {
+    color: #e60000;
+    font-weight: bold;
+}
+
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.checkout-btn:hover {
+    background: #444;
+}
+
+
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
