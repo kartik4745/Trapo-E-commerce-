@@ -35,14 +35,44 @@ nav a:hover {
     color: yellow;
 }
 
-.hero {
-    background: url('assets/photos/360_F_284325273_ei2pxwlAyg4ghLOBINFPiF1LVubbfLpA.jpg') no-repeat center/cover;
-    height: 350px;
+.slider {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 2px 2px 5px black;
+    font-size: 2.4rem;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    background-size: cover;
+    background-position: center;
+    animation: fadeSlide 12s infinite;
+}
+
+
+.slide1 { background-image: url('assets/photos/VijayandKartik.jpg'); animation-delay: 0s; }
+.slide2 { background-image: url('assets/photos/photo-1527672809634-04ed36500acd.jpeg'); animation-delay: 4s; }
+.slide3 { background-image: url('assets/photos/watch.jpeg'); animation-delay: 8s; }
+
+
+@keyframes fadeSlide {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    30% { opacity: 1; }
+    38% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 
