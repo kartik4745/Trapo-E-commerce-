@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.slider {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.4rem;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    background-size: cover;
+    background-position: center;
+    animation: fadeSlide 12s infinite;
+}
+
+
+.slide1 { background-image: url('assets/photos/VijayandKartik.jpg'); animation-delay: 0s; }
+.slide2 { background-image: url('assets/photos/photo-1527672809634-04ed36500acd.jpeg'); animation-delay: 4s; }
+.slide3 { background-image: url('assets/photos/watch.jpeg'); animation-delay: 8s; }
+
+
+@keyframes fadeSlide {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    30% { opacity: 1; }
+    38% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.products {
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;      
+}
+
+
+.card-inner {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+.card:hover .card-inner {
+    transform: scale(1.08) translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+.card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background: #444;
+}
+
+
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
